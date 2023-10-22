@@ -1,12 +1,10 @@
 'use client';
-import { signIn } from 'next-auth/react'
-import { useSearchParams } from 'next/navigation'
+
 
 const SignInPage = () => {
 
-    const searchParams = useSearchParams()
+  
 
-    const callbackUrl = searchParams.get('callbackUrl')
 
   return (
  
@@ -14,14 +12,12 @@ const SignInPage = () => {
            <div className="card">
            <div className="card-head">
             <h3>Sign in to your account</h3>
+            
            </div>
            <div className="card-body">
-     <button className="btn btn-dark" onClick={() => signIn('github', { callbackUrl })}>    Continue with GitHub </button>
-        </div>
-           <div className="card-body">
-     <button className="btn btn-danger" onClick={() => signIn('google', { callbackUrl })}>    Continue with Google </button>
-        </div>
-        </div>  
+           <a href="http://localhost:3000/api/auth/signin">SIGN IN</a>
+   </div>
+   </div> 
         </div> 
   )
 }

@@ -17,10 +17,15 @@
     "firebase": "^10.5.0",
     "next": "13.5.4",
     "next-auth": "^4.24.3",
+    "nodemailer": "^6.9.6",
     "react": "^18",
     "react-bootstrap": "^2.9.0",
     "react-dom": "^18",
     "react-filepond": "^7.1.2",
     "use-shopping-cart": "^3.1.8"
+  },
+  "devDependencies": {
+    "@auth/mongodb-adapter": "^2.0.2",
+    "mongodb": "^6.2.0"
   }
 }

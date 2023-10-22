@@ -32,7 +32,7 @@ const Createarticle = ({ scategories }) => {
 
   const [file, setFile] = useState("");
 
-  const handleSubmit = (url) => {
+  const handleSubmit = () => {
 
  
     const newProduct = {
