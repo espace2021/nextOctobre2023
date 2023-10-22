@@ -16,6 +16,9 @@ const SignInPage = () => {
             <h3>Sign in to your account</h3>
            </div>
            <div className="card-body">
+     <button className="btn btn-dark" onClick={() => signIn('github', { callbackUrl })}>    Continue with GitHub </button>
+        </div>
+           <div className="card-body">
      <button className="btn btn-danger" onClick={() => signIn('google', { callbackUrl })}>    Continue with Google </button>
         </div>
         </div>  
